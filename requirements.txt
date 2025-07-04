@@ -1,0 +1,7 @@
+flask
+requests
+chardet
+beautifulsoup4
+feedparser
+python-dotenv
+flask-apscheduler

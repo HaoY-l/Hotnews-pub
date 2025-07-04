@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  hotnews:
+    build: .
+    container_name: hotnews-app
+    ports:
+      - "8890:5000"
+    volumes:
+      - ./news.db:/app/news.db
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
